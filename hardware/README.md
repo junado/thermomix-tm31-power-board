@@ -3,6 +3,7 @@
 - [`TM31_power_board_schematic.pdf`](TM31_power_board_schematic.pdf): 8 pages, printable.
 - [`kicad/`](kicad): KiCad project. Open `TM31_power_board.kicad_pro`. Written in KiCad 7 format; KiCad 8–10 open it
   and offer to upgrade the files on first save.
+- [`svg/`](svg): one SVG per sheet, viewable in any browser (used by the website's schematic viewer).
 - [`TM31_power_board.net`](TM31_power_board.net): the netlist exported from the project (KiCad S-expression format),
   for anyone who wants the connections without opening KiCad.
 
@@ -51,6 +52,7 @@ The connection data lives in [`../tools/tm31.py`](../tools/tm31.py) (reference n
 ```sh
 python3 tools/tm31w.py hardware/kicad
 kicad-cli sch export pdf -o hardware/TM31_power_board_schematic.pdf hardware/kicad/TM31_power_board.kicad_sch
+kicad-cli sch export svg -o hardware/svg hardware/kicad/TM31_power_board.kicad_sch   # then rename to 1-overview.svg ... 8-power-supply.svg
 tools/check_schematic.sh        # must print PASS
 ```
 

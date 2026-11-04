@@ -11,3 +11,15 @@ path = "datasheets/archive/*.pdf"
 precedence = "override"
 SPDX-FileCopyrightText = "NEC Electronics Corporation / Renesas Electronics Corporation and other respective manufacturers"
 SPDX-License-Identifier = "LicenseRef-Manufacturer-Datasheet"
+
+[[annotations]]
+path = ["website/assets/mermaid.min.js", "website/assets/mermaid.LICENSE.txt"]
+precedence = "override"
+SPDX-FileCopyrightText = "2014-2022 Knut Sveidqvist and Mermaid contributors"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = ["website/assets/iframe-worker-shim.js", "website/assets/iframe-worker.LICENSE.txt"]
+precedence = "override"
+SPDX-FileCopyrightText = "2020-2022 Martin Donath"
+SPDX-License-Identifier = "MIT"

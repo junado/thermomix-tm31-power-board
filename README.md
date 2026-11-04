@@ -54,7 +54,8 @@ Full story: [docs/01-repair-log.md](docs/01-repair-log.md).
 | [images/annotated/](images/annotated) | Annotated maps of both board sides |
 | [images/diagrams/](images/diagrams) | Rendered block, safety-logic and wiring diagrams (PNG copies of the Mermaid diagrams) |
 | [photos/](photos) | Original photos (resized, metadata stripped) |
-| [tools/](tools/README.md) | Scripts that generate the schematic and the annotated images |
+| [tools/](tools/README.md) | Scripts that generate the schematic, the annotated images and the website |
+| [website/](website/README.md) | Configuration of the documentation website (static, self-hostable, works offline) |
 
 ## Key findings at a glance
 
@@ -71,6 +72,12 @@ Full story: [docs/01-repair-log.md](docs/01-repair-log.md).
 - **The front panel talks to the power board over an opto-isolated UART** on CN300, the only isolated connector.
 - **120 V bowl:** heater 12.8 Ω (about 1.1 kW, 9.4 A), NTC about 130 kΩ at room temperature.
   The service guide's "sensor 48–55 Ω / heater 110–130 kΩ" values are swapped labels for a 230 V bowl.
+
+## Website
+
+Everything here is also available as a browsable website with search, photo galleries and a schematic viewer.
+It is plain static files: GitHub Pages builds it from this repository, and it can be hosted on any web server or
+opened straight from disk. See [website/README.md](website/README.md).
 
 ## Status
 

@@ -1,0 +1,8 @@
+/* Wide tables (parts list, pin maps) scroll instead of squeezing. */
+.md-typeset table:not([class]) { font-size: 0.72rem; }
+.md-typeset__table { display: block; overflow-x: auto; }
+/* Schematic sheets and photos: white background so the drawings stay readable in dark mode. */
+.md-typeset img[src$=".svg"] { background: #fff; border: 1px solid var(--md-default-fg-color--lightest); }
+.md-typeset img { border-radius: 2px; }
+/* Mermaid diagrams: allow horizontal scroll on small screens. */
+.md-typeset .mermaid { overflow-x: auto; }

@@ -5,3 +5,6 @@ __pycache__/
 *.lck
 fp-info-cache
 .DS_Store
+
+# built website (tools/build_site.sh)
+site/

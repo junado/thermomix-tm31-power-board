@@ -1,0 +1,115 @@
+# MkDocs configuration for the documentation website.
+# Do not run mkdocs directly on this file: tools/build_site.sh stages the repository first (see website/README.md).
+site_name: Thermomix TM31 power board
+site_description: Repair log and reverse-engineering of the Thermomix TM31 (120 V) power board NPVTM31LTA-3
+site_author: Julien
+site_url: !ENV [SITE_URL, ""]
+repo_url: !ENV [REPO_URL, ""]
+copyright: >-
+  &copy; 2026 Julien &middot; CC BY-SA 4.0 &middot; datasheets &copy; their manufacturers &middot;
+  not affiliated with Vorwerk &middot; working on mains equipment is at your own risk
+
+docs_dir: docs
+# Plain .html links: the site works from any web server, from a sub-folder, and opened straight from disk.
+use_directory_urls: false
+
+theme:
+  name: material
+  # System fonts: no request to Google Fonts, nothing loaded from the internet.
+  font: false
+  icon:
+    logo: material/chip
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+  # Makes the built site browsable from file:// (search included), e.g. from an archived copy.
+  - offline
+
+markdown_extensions:
+  - tables
+  - attr_list
+  - md_in_html
+  - admonition
+  - github-callouts
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+# Local copy of Mermaid 11.4.1 (MIT, see assets/mermaid.LICENSE.txt). When it is present the theme uses it
+# instead of downloading Mermaid from a CDN, so the diagrams render offline.
+extra_javascript:
+  - assets/mermaid.min.js
+extra_css:
+  - assets/extra.css
+
+# Local copy of the iframe-worker shim (MIT, see assets/iframe-worker.LICENSE.txt) that lets search run from
+# file://. Listing it here stops the offline plugin from loading it from a CDN.
+extra:
+  polyfills:
+    - assets/iframe-worker-shim.js
+
+nav:
+  - Home: README.md
+  - The repair:
+      - Repair log: docs/01-repair-log.md
+      - Troubleshooting: docs/14-troubleshooting.md
+  - How it works:
+      - Architecture: docs/02-architecture.md
+      - Mains & heater: docs/03-heater-circuit.md
+      - Motor DC bus: docs/04-motor-dc-bus.md
+      - Motor drive: docs/05-motor-drive.md
+      - Safety logic: docs/06-safety-logic.md
+      - Analog sensing: docs/07-analog-sensing.md
+      - MCU & links: docs/08-mcu-and-links.md
+      - Power supply: docs/09-power-supply.md
+  - Reference:
+      - Parts list: docs/10-parts-list.md
+      - Connectors & wiring: docs/11-connectors-and-wiring.md
+      - Measurements: docs/12-measurements.md
+      - Unknowns & hypotheses: docs/13-unknowns-and-hypotheses.md
+      - Future work: docs/15-future-work.md
+      - References: docs/16-references.md
+  - Schematic:
+      - Schematic sheets: hardware/schematic.md
+      - Files & how to read: hardware/README.md
+      - KiCad project files: hardware/kicad/index.md
+  - Photos:
+      - Annotated maps: images/annotated/index.md
+      - Photos: photos/index.md
+      - Diagrams: images/diagrams/index.md
+  - Datasheets:
+      - Datasheet links: datasheets/README.md
+      - Archived datasheets: datasheets/archive/NOTICE.md
+      - Archive manifest: datasheets/archive/MANIFEST.md
+  - About:
+      - Tools: tools/README.md
+      - Website: website/README.md
+      - License: license.md

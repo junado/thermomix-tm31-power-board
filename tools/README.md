@@ -12,6 +12,7 @@ Python 3 scripts used to produce the schematic and annotated images. The image s
 | `kisch.py` | Library: label-per-pin KiCad writer with auto layout | imported by `tm31.py` |
 | `netcmp.py` | Compares two KiCad netlists node by node | `python3 tools/netcmp.py a.net b.net` |
 | `check_schematic.sh` | Regenerates both projects, exports their netlists and compares them | `tools/check_schematic.sh` (prints `PASS`) |
+| `build_site.sh` | The documentation website in `./site` (see `website/README.md`) | `tools/build_site.sh` |
 | `annotate_component_side.py` | `images/annotated/component-side-block-map.jpg` | `python3 tools/annotate_component_side.py photos/03-component-side/component-side-full.jpg images/annotated/component-side-block-map.jpg` |
 | `annotate_quadrants.py` | Solder-side quadrant A, B, C maps | `python3 tools/annotate_quadrants.py photos/04-solder-side images/annotated` |
 | `annotate_quadrant_D.py` | Solder-side quadrant D map | `python3 tools/annotate_quadrant_D.py photos/04-solder-side/quadrant-D-heater-and-power.jpg images/annotated/solder-side-quadrant-D-heater-and-power.jpg` |
