@@ -1,0 +1,7 @@
+{
+  "board": {"design_settings": {}},
+  "meta": {"filename": "TM31_power_board.kicad_pro", "version": 1},
+  "schematic": {"legacy_lib_dir": "", "legacy_lib_list": []},
+  "sheets": [["13e32bb4-f5c3-4c0d-b12b-8325154c069c", ""], ["bd411efd-8245-4d65-a12b-23abf899ec9b", "Mains input & heater"], ["1362c95e-04ce-4e07-a731-57a9992e8838", "Motor DC bus (doubler) & pre-charge"], ["3924bea4-5fef-457b-b410-62f119894b71", "Motor power stage (4-phase SR)"], ["099e6c20-a1b1-4790-8b9b-b4d2c9f7f304", "Safety logic (relay permits, watchdog, gate-drive enable)"], ["208f9932-a1c5-40ba-b238-c90c5ecb91c4", "Analog sensing (currents, trip, motor sensors)"], ["9ee46292-ecf4-4d74-83c5-bc9fe3434e20", "MCU, programming header & front-panel link"], ["e42505ca-d99e-40a4-926f-5c3a21500714", "Low-voltage power supply (flyback)"]],
+  "text_variables": {}
+}
