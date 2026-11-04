@@ -2,6 +2,6 @@
   "board": {"design_settings": {}},
   "meta": {"filename": "TM31_power_board.kicad_pro", "version": 1},
   "schematic": {"legacy_lib_dir": "", "legacy_lib_list": []},
-  "sheets": [["13e32bb4-f5c3-4c0d-b12b-8325154c069c", ""], ["bd411efd-8245-4d65-a12b-23abf899ec9b", "Mains input & heater"], ["1362c95e-04ce-4e07-a731-57a9992e8838", "Motor DC bus (doubler) & pre-charge"], ["3924bea4-5fef-457b-b410-62f119894b71", "Motor power stage (4-phase SR)"], ["099e6c20-a1b1-4790-8b9b-b4d2c9f7f304", "Safety logic (relay permits, watchdog, gate-drive enable)"], ["208f9932-a1c5-40ba-b238-c90c5ecb91c4", "Analog sensing (currents, trip, motor sensors)"], ["9ee46292-ecf4-4d74-83c5-bc9fe3434e20", "MCU, programming header & front-panel link"], ["e42505ca-d99e-40a4-926f-5c3a21500714", "Low-voltage power supply (flyback)"]],
+  "sheets": [["90e6e6cd-7d92-4a88-b525-1fe8fe8aa383", ""], ["27ed591a-2ea3-4d09-9267-de446b290130", "Mains input & heater"], ["9b7f1aac-cc2d-40d9-bbd9-e990fd15e227", "Motor DC bus (doubler) & pre-charge"], ["22fe5b0a-ad35-4b94-88f8-d53dd7281c6e", "Motor power stage (4-phase SR)"], ["5faa5df6-7ad2-4866-916d-2c56450a3297", "Safety logic (relay permits, watchdog, gate-drive enable)"], ["593723c6-627a-4a90-bb6f-ad372284135c", "Analog sensing (currents, trip, motor sensors)"], ["6f966399-ceb0-4d40-8add-5b12e883e858", "MCU, programming header & front-panel link"], ["37ba7d2e-08e3-4284-a689-d2e824af73c1", "Low-voltage power supply (flyback)"]],
   "text_variables": {}
 }

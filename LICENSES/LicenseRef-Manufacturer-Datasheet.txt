@@ -1,0 +1,5 @@
+Manufacturer datasheet. All rights reserved by the respective manufacturer.
+
+This file is reproduced unmodified for reference and archival purposes only. It is not licensed under this
+repository's CC BY-SA 4.0 license. See datasheets/archive/NOTICE.md. Rights holders may request removal by opening
+an issue.

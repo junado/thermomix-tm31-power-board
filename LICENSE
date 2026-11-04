@@ -17,7 +17,9 @@ Under the following terms:
 Full legal code: https://creativecommons.org/licenses/by-sa/4.0/legalcode
 
 Exclusions:
-  - Manufacturer datasheets are not included in this repository and are not covered by this license.
+  - Manufacturer datasheets archived in datasheets/archive/ remain the property of their manufacturers and are NOT
+    covered by this license. They are reproduced unmodified for reference only; see datasheets/archive/NOTICE.md.
+    Machine-readable licensing information is in REUSE.toml.
   - "Thermomix" and "Vorwerk" are trademarks of Vorwerk. This project is not affiliated with or endorsed by Vorwerk.
 
 Disclaimer: this documentation describes work on mains-powered equipment. It is provided "as is", without

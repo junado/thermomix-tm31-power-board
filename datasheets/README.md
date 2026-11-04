@@ -1,13 +1,15 @@
 # Datasheets
 
-Datasheets are **linked, not mirrored**: they are copyrighted by their manufacturers. Several links point to
+Datasheets are mostly **linked, not mirrored**: they are copyrighted by their manufacturers. The exception is the
+discontinued microcontroller, whose datasheet is **archived unmodified in [archive/](archive/NOTICE.md)** (with a
+SHA-256 manifest) so the schematic stays usable if the last copies online disappear. Several links point to
 distributor or datasheet-archive pages because the original manufacturer pages for these older parts have moved.
 Links were collected in November 2026 (web searches; TI, ST and Nexperia links follow those manufacturers' standard
 datasheet URLs). If one breaks, search for the part number.
 
 | Ref | Part | Datasheet |
 |---|---|---|
-| IC1 | NEC/Renesas µPD78F0034(B), 78K0 8-bit MCU | [Elcodis (UPD78F0034A, same family)](https://elcodis.com/parts/5704542/UPD78F0034AGK-9ET.html). The pinout used here is from the NEC µPD78F0034 data sheet, p. 6 (64-pin QFP "GC"); port types from p. 11 |
+| IC1 | NEC/Renesas µPD78F0034(B), 78K0 8-bit MCU | **[Archived copy](archive/NEC_uPD78F0034_datasheet.pdf)** · [Elcodis (UPD78F0034A, same family)](https://elcodis.com/parts/5704542/UPD78F0034AGK-9ET.html). The pinout used here is from the NEC µPD78F0034 data sheet, p. 6 (64-pin QFP "GC"); port types from p. 11 |
 | IC501, IC502 | Infineon (International Rectifier) IR2106S | [Findchips: IR2106S](https://www.findchips.com/detail/ir2106s/Infineon-Technologies-AG) |
 | IC503 | 74HC123 / 74HCT123 dual retriggerable monostable | [Nexperia 74HC_HCT123](https://assets.nexperia.com/documents/data-sheet/74HC_HCT123.pdf) |
 | IC610 | ST LM393 dual comparator | [ST LM393](https://www.st.com/resource/en/datasheet/lm393.pdf) |

@@ -49,8 +49,8 @@ Full story: [docs/01-repair-log.md](docs/01-repair-log.md).
 | [docs/14-troubleshooting.md](docs/14-troubleshooting.md) | Symptom → what to check, with safe test procedures |
 | [docs/15-future-work.md](docs/15-future-work.md) | Next steps (decoding the front-panel serial link) |
 | [docs/16-references.md](docs/16-references.md) | Forum threads, service documents, sources |
-| [datasheets/](datasheets/README.md) | Datasheet links for every identified chip and power part |
-| [hardware/](hardware/README.md) | KiCad schematic project (8 sheets) and PDF |
+| [datasheets/](datasheets/README.md) | Datasheet links for every identified chip and power part; archived MCU datasheet |
+| [hardware/](hardware/README.md) | KiCad schematic project (8 wired sheets), PDF and netlist |
 | [images/annotated/](images/annotated) | Annotated maps of both board sides |
 | [images/diagrams/](images/diagrams) | Rendered block, safety-logic and wiring diagrams (PNG copies of the Mermaid diagrams) |
 | [photos/](photos) | Original photos (resized, metadata stripped) |
@@ -77,7 +77,8 @@ Full story: [docs/01-repair-log.md](docs/01-repair-log.md).
 - The machine is repaired and heats normally.
 - Power board: about 95 % traced. Open items are listed in
   [docs/13-unknowns-and-hypotheses.md](docs/13-unknowns-and-hypotheses.md).
-- Schematic: rev 0.1, KiCad 7 format (opens in KiCad 8–10).
+- Schematic: rev 0.2, drawn as wired circuits, KiCad 7 format (opens in KiCad 8–10). Connections verified identical
+  to the rev 0.1 netlist.
 
 Corrections, photos of other board revisions (230 V, pre-2012) and measurements are welcome. Open an issue or a pull
 request.
@@ -85,7 +86,8 @@ request.
 ## License and credits
 
 Documentation, photos, drawings and schematic: [CC BY-SA 4.0](LICENSE). Scripts in `tools/`: same license.
-Datasheets are not mirrored here; they remain the property of their manufacturers (links in `datasheets/`).
+Datasheets remain the property of their manufacturers and are not covered by that license. Most are linked; the
+discontinued MCU's datasheet is archived unmodified in [`datasheets/archive/`](datasheets/archive/NOTICE.md).
 
 Traced, measured and photographed by Julien, with analysis and documentation assistance from Claude (Anthropic).
 "Thermomix" and "Vorwerk" are trademarks of Vorwerk; this project is not affiliated with Vorwerk.

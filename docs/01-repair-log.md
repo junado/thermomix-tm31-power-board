@@ -94,3 +94,4 @@ schematic instead of guessing. Timeline:
 | 2026-10-25 | MCU pinout from datasheet; CN503 = flash programming header; IC503 = 74HC(T)123 watchdog |
 | 2026-10-30 | Relay drivers and diode-AND permit logic; motor phase/driver mapping; overcurrent trip |
 | 2026-11-03 | Gate-drive enable, IC700 latching permits, sensor board connector, freewheel diodes; KiCad schematic rev 0.1 |
+| 2026-11-03 | Schematic rev 0.2: redrawn as wired circuits (same netlist); MCU datasheet archived |
