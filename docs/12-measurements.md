@@ -44,7 +44,7 @@ All measured on this machine (TM31-4C, 120 V). "In-circuit" readings include par
 
 | What | Value | Source |
 |---|---|---|
-| Original triac | BTA12-600BW | CommentReparer forum |
+| Original triac (230V model) | BTA12-600BW | CommentReparer forum |
 | Shorted triac symptom | continuous heating, error 69 | Forum, Vorwerk service procedure |
 | Triac in-circuit, 120 V board (forum) | ~73 Ω between outer legs | CommentReparer forum (in-circuit) |
 | Heating test | 1 L water, 80 °C, speed 1, 11 min: 30→70 °C in < 4 min, ±5 °C | Vorwerk service procedure |
